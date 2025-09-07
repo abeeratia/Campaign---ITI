@@ -1,0 +1,27 @@
+// abstracts
+@use "./abstracts/variables" as *;
+@use "./abstracts/mixins" as *;
+
+// vendors
+// (فضى — لسه مفيش حاجة)
+
+// base
+@use "./base/reset" as *;
+@use "./base/topygraphy" as *;
+
+// layout
+@use "./layout/nav" as *;
+
+// components
+@use "./components/btns" as *;
+
+// pages
+@use "./pages/regester";
+@use "./pages/login";
+@use "./pages/campaign"
+
+
+// (فضى)
+
+// themes
+// (فضى)
