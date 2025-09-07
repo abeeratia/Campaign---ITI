@@ -392,88 +392,82 @@ body {
 .container {
   margin: 50px auto;
   width: 100%;
-  max-width: 70%;
+  max-width: 100%;
   padding: 0 1em;
 }
 
 .campaign-section {
-  max-width: 600px;
+  max-width: 900px;
   margin: 2rem auto;
   padding: 1rem;
 }
+.campaign-section .form-message {
+  padding: 20px;
+}
 .campaign-section .campaign-form {
   background: white;
-  border: 1px solid white;
+  border: 1px solid #eeeeee;
   border-radius: 12px;
-  padding: 1rem;
+  padding: 1.2rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   margin-bottom: 2rem;
+  transition: box-shadow 0.3s ease;
+}
+.campaign-section .campaign-form:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 .campaign-section .campaign-form h2 {
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #1d2127;
+  text-align: center;
 }
 .campaign-section .campaign-form .form-group {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
 }
 .campaign-section .campaign-form .form-group label {
   font-weight: 600;
-  font-size: 0.9rem;
-  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: #1d2127;
 }
 .campaign-section .campaign-form .form-group input[type=text],
 .campaign-section .campaign-form .form-group input[type=number],
-.campaign-section .campaign-form .form-group input[type=date] {
-  padding: 0.5rem;
+.campaign-section .campaign-form .form-group input[type=date],
+.campaign-section .campaign-form .form-group textarea {
+  padding: 0.6rem;
   border: 1px solid #eeeeee;
   border-radius: 6px;
   font-size: 0.9rem;
+  transition: border-color 0.3s ease;
 }
-.campaign-section .campaign-form .form-group input[type=checkbox] {
-  margin-right: 0.4rem;
+.campaign-section .campaign-form .form-group input[type=text]:focus,
+.campaign-section .campaign-form .form-group input[type=number]:focus,
+.campaign-section .campaign-form .form-group input[type=date]:focus,
+.campaign-section .campaign-form .form-group textarea:focus {
+  border-color: #d5ae21;
+  outline: none;
 }
-.campaign-section .campaigns-container {
-  display: grid;
-  gap: 1rem;
+.campaign-section .campaign-form .form-group textarea {
+  resize: vertical;
+  min-height: 80px;
 }
-.campaign-section .campaigns-container .campaign-card {
-  background: white;
-  border: 1px solid #eeeeee;
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+.campaign-section .campaign-form .form-group input[type=file] {
+  font-size: 0.85rem;
 }
-.campaign-section .campaigns-container .campaign-card .campaign-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.campaign-section .campaign-form .form-group .error-msg {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
 }
-.campaign-section .campaigns-container .campaign-card .campaign-header h2 {
-  font-size: 1.1rem;
-  margin: 0;
+.campaign-section .campaign-form .form-group .input-error {
+  border-color: red !important;
 }
-.campaign-section .campaigns-container .campaign-card .campaign-header .status {
-  padding: 0.3rem 0.6rem;
-  border-radius: 8px;
-  font-size: 0.8rem;
-}
-.campaign-section .campaigns-container .campaign-card .campaign-header .status.approved {
-  background: #e0f7e9;
-  color: #2e7d32;
-}
-.campaign-section .campaigns-container .campaign-card .campaign-header .status.pending {
-  background: #fff3e0;
-  color: #e65100;
-}
-.campaign-section .campaigns-container .campaign-card .campaign-body {
+.campaign-section .campaign-form .btn--full {
+  width: 100%;
   margin-top: 0.5rem;
-}
-.campaign-section .campaigns-container .campaign-card .campaign-body p {
-  margin: 0.2rem 0;
-  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=main.css.map */

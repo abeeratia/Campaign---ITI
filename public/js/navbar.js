@@ -9,6 +9,7 @@ function navBar() {
       <ul class="nav__list">
         <li><a href="/index.html" class="nav-link">Home</a></li>
         <li><a href="/pages/about.html" class="nav-link">About</a></li>
+        <li><a href="/pages/campaign.html">Add Campaigns</a></li>
       </ul>
       <div class="menu">
         <i class="fa-solid fa-align-justify"></i>
@@ -54,40 +55,16 @@ export let NavBar = () => {
 
   navContent.innerHTML = navBar();
   const navSign = document.querySelector(".nav__sign");
-  function decodeJWT(token) {
-    // اتأكد إن فى توكن
-    if (!token) return null;
 
-    // افصلى التوكن لأجزاء
-    const parts = token.split(".");
-    if (parts.length !== 3) {
-      console.error("Invalid JWT");
-      return null;
-    }
-
-    // الجزء التانى هو الـ payload (Base64Url)
-    const payload = parts[1];
-
-    // حوّلى Base64Url → Base64 عادى
-    const base64 = payload.replace(/-/g, "+").replace(/_/g, "/");
-
-    // فكّيه وحوّليه JSON
-    const decodedPayload = JSON.parse(atob(base64));
-
-    return decodedPayload;
-  }
-
-  // مثال للاستخدام:
-  const token = localStorage.getItem("token"); // لو متخزّن عندك
-  const payloadData = decodeJWT(token);
-
-  console.log(payloadData); // هتلاقى بيانات المستخدم وصلاحياته ووقت الانتهاء
+  const token = localStorage.getItem("token");
+  const userName = localStorage.getItem("userName");
+  console.log(userName);
 
   if (token) {
     navSign.innerHTML = `
       <div class="log">
-      <p>Hi </p>
-      <p ><a href="/pages/campaign.html">Campaigns</a></p>
+      <p>Hi ${userName}</p>
+     
       <p  id="logout">Logout</p>
       
       </div>

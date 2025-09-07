@@ -128,18 +128,18 @@ document.addEventListener("DOMContentLoaded", () => {
       role: "user",
       isActive: false,
     };
-     
+
     try {
       const response = await fetch("http://localhost:3000/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-   console.log(response);
-   
+      console.log(response);
+
       const result = await response.json();
       console.log(result);
-      
+
       if (!response.ok) {
         generalMsg.textContent = result;
         generalMsg.classList.add("error");
@@ -147,6 +147,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       localStorage.setItem("token", result.accessToken);
+
+      localStorage.setItem("userId", result.user.id);
+      localStorage.setItem("userName", result.user.name);
+      localStorage.setItem("userIsActive", result.user.isActive);
+      localStorage.setItem("userIsRole", result.user.role);
+
       generalMsg.textContent = "Registration successful!";
       generalMsg.classList.add("success");
 

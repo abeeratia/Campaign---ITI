@@ -4,97 +4,91 @@
 .container {
   margin: 50px auto;
   width: 100%;
-  max-width: 70%;
+  max-width:100%;
   padding: 0 1em;
 }
+
+// ==================== CAMPAIGN SECTION ====================
 .campaign-section {
-  max-width: 600px;
+  max-width: 900px;
   margin: 2rem auto;
   padding: 1rem;
+ 
+.form-message{
+  padding: 20px;
+}
 
   .campaign-form {
     background: $light-color;
-    border: 1px solid $light-color;
+    border: 1px solid $light-gray;
     border-radius: 12px;
-    padding: 1rem;
+    padding: 1.2rem;
     box-shadow: 0 2px 6px $overlay-color;
     margin-bottom: 2rem;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 4px 10px $overlay-color;
+    }
 
     h2 {
       margin-bottom: 1rem;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       color: $dark-color;
+      text-align: center;
     }
 
     .form-group {
-      margin-bottom: 0.8rem;
+      margin-bottom: 1rem;
       display: flex;
       flex-direction: column;
 
       label {
         font-weight: 600;
-        font-size: 0.9rem;
-        margin-bottom: 0.3rem;
+        font-size: 0.95rem;
+        margin-bottom: 0.4rem;
+        color: $dark-color;
       }
 
       input[type="text"],
       input[type="number"],
-      input[type="date"] {
-        padding: 0.5rem;
+      input[type="date"],
+      textarea {
+        padding: 0.6rem;
         border: 1px solid $light-gray;
         border-radius: 6px;
         font-size: 0.9rem;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          border-color: $primary-color;
+          outline: none;
+        }
       }
 
-      input[type="checkbox"] {
-        margin-right: 0.4rem;
+      textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+
+      input[type="file"] {
+        font-size: 0.85rem;
+      }
+
+      .error-msg {
+        color: $text-error;
+        font-size: 0.85rem;
+        margin-top: 0.3rem;
+      }
+
+      .input-error {
+        border-color: $text-error !important;
       }
     }
-  }
 
-  .campaigns-container {
-    display: grid;
-    gap: 1rem;
-
-    .campaign-card {
-      background: $light-color;
-      border: 1px solid $light-gray;
-      border-radius: 12px;
-      padding: 1rem;
-      box-shadow: 0 2px 6px $overlay-color;
-
-      .campaign-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        h2 {
-          font-size: 1.1rem;
-          margin: 0;
-        }
-
-        .status {
-          padding: 0.3rem 0.6rem;
-          border-radius: 8px;
-          font-size: 0.8rem;
-          &.approved {
-            background: #e0f7e9;
-            color: #2e7d32;
-          }
-          &.pending {
-            background: #fff3e0;
-            color: #e65100;
-          }
-        }
-      }
-
-      .campaign-body {
-        margin-top: 0.5rem;
-        p {
-          margin: 0.2rem 0;
-          font-size: 0.9rem;
-        }
-      }
+    .btn--full {
+      width: 100%;
+      margin-top: 0.5rem;
     }
   }
 }
