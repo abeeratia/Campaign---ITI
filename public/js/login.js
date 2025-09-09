@@ -49,11 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Update on input
+
   emailInput.addEventListener("input", validateEmailInput);
   passwordInput.addEventListener("input", validatePasswordInput);
 
-  // Remove error on blur if valid
+
   [emailInput, passwordInput].forEach((input) => {
     input.addEventListener("blur", () => {
       const msgEl = document.querySelector(`#${input.id}-msg`);
@@ -68,11 +68,11 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    // Validate both fields immediately
+  
     const validEmail = validateEmailInput();
     const validPassword = validatePasswordInput();
 
-    // Show general error if any field invalid
+   
     if (!validEmail || !validPassword) {
       loginMsg.textContent = "Please fix the errors above before login";
       loginMsg.classList.add("error");
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Clear general message if all valid
+  
     loginMsg.textContent = "";
     loginMsg.classList.remove("error");
 

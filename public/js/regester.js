@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!result.valid) {
       nameInput.classList.add("is-invalid");
       nameInput.classList.remove("is-valid");
-      nameMsg.textContent = result.msg;
+      nameMsg.textContent = result;
       nameMsg.classList.add("error");
       return false;
     } else {

@@ -1,4 +1,3 @@
-// =================== VALIDATIONS ===================
 export function validateEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
@@ -14,7 +13,6 @@ export function validateName(name) {
   return { valid: true, msg: "" };
 }
 
-// =================== DOM HELPERS ===================
 export function showMessage(element, message, type = "error") {
   element.textContent = message;
   element.classList.remove("error", "success");
@@ -26,7 +24,6 @@ export function clearMessage(element) {
   element.classList.remove("error", "success");
 }
 
-// =================== LOCAL STORAGE ===================
 export function saveToken(token) {
   localStorage.setItem("token", token);
 }

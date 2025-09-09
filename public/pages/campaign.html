@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Campaigns</title>
+    <!-- font awesome -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap"
+      rel="stylesheet"
+      href="./fontawesome-free-7.0.0-web/css/all.min.css"
+    />
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- css -->
     <link rel="stylesheet" href="../style/main.css" />
   </head>
   <body>
@@ -24,7 +33,6 @@
               id="title"
               name="title"
               placeholder="Campaign Title"
-              required
             />
             <div class="error-msg" id="title-error"></div>
           </div>
@@ -35,20 +43,13 @@
               id="description"
               name="description"
               placeholder="Set description"
-              required
             ></textarea>
             <div class="error-msg" id="description-error"></div>
           </div>
 
           <div class="form-group">
             <label for="goal">Goal ($)</label>
-            <input
-              type="number"
-              id="goal"
-              name="goal"
-              placeholder="5000"
-              required
-            />
+            <input type="number" id="goal" name="goal" placeholder="5000" />
             <div class="error-msg" id="goal-error"></div>
           </div>
 
@@ -66,7 +67,6 @@
 
           <button type="submit" class="btn btn--full">Add Campaign</button>
 
-          <!-- مكان الرسالة العامة بعد الزرار -->
           <div class="form-message" id="form-message"></div>
         </form>
       </section>

@@ -1,5 +1,4 @@
-// import { jwtDecode } from "jwt-decode";
-
+const token = localStorage.getItem("token");
 function navBar() {
   return `
     <nav class="nav">
@@ -9,7 +8,12 @@ function navBar() {
       <ul class="nav__list">
         <li><a href="/index.html" class="nav-link">Home</a></li>
         <li><a href="/pages/about.html" class="nav-link">About</a></li>
-        <li><a href="/pages/campaign.html">Add Campaigns</a></li>
+       ${
+         token
+           ? `<li><a href="/pages/groupcampaign.html" class="nav-link">Show Campaigns</a></li>
+        <li><a href="/pages/campaign.html" class="nav-link">Add Campaigns</a></li>`
+           : ""
+       } 
       </ul>
       <div class="menu">
         <i class="fa-solid fa-align-justify"></i>
@@ -31,6 +35,7 @@ function menuToggle() {
 
 function logOut() {
   localStorage.removeItem("token");
+  window.location.href = "/index.html";
   location.reload();
 }
 
@@ -40,8 +45,15 @@ function logIn() {
 
 function setActiveLink() {
   const links = document.querySelectorAll(".nav-link");
+  const currentPath = window.location.pathname;
+
   links.forEach((link) => {
-    if (link.href === window.location.href) {
+    const linkPath = new URL(link.href).pathname;
+
+    if (
+      linkPath === currentPath ||
+      (linkPath.endsWith("index.html") && currentPath === "/")
+    ) {
       link.classList.add("active");
     } else {
       link.classList.remove("active");
@@ -56,17 +68,14 @@ export let NavBar = () => {
   navContent.innerHTML = navBar();
   const navSign = document.querySelector(".nav__sign");
 
-  const token = localStorage.getItem("token");
   const userName = localStorage.getItem("userName");
   console.log(userName);
 
   if (token) {
     navSign.innerHTML = `
       <div class="log">
-      <p>Hi ${userName}</p>
-     
-      <p  id="logout">Logout</p>
-      
+        <p>Hi ${userName}</p>
+        <p id="logout">Logout</p>
       </div>
     `;
     document.querySelector("#logout").addEventListener("click", logOut);

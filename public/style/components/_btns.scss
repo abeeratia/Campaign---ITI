@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as *;
 
 .btn {
+  margin-block: 20px;
   background-color: $primary-color;
   color: $light-color;
   padding: 12px;
