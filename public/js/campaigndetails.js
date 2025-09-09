@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 <li class="rewards">
                   <strong>${reward.title}</strong> ${reward.amount} 
                   <p >
-                    <a href="#${campaignId}#${reward.id}">Payment</a>
+                  
+                    <a href="../pages/checkout.html#${campaignId}#${reward.id}">Payment</a>
                   </p>
                 </li>
               `

@@ -35,8 +35,8 @@ function menuToggle() {
 
 function logOut() {
   localStorage.removeItem("token");
-  window.location.href = "/index.html";
   location.reload();
+  window.location.href = "/index.html";
 }
 
 function logIn() {

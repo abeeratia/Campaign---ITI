@@ -1,252 +1,12 @@
 {
   "users": [
     {
-      "email": "abeeryousef198@gmail.com",
-      "password": "$2a$10$QwZJ6TrG2tBbtsVvBfWaNePA.DlhzpggnV13EMgtIi9.p2dIL36AO",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 1
-    },
-    {
-      "email": "abeeryousef15555598@gmail.com",
-      "password": "$2a$10$eBSExtJZP.vtgDXpy6ZTq.T1lTmh5RrByIhsRcQ1VMGHos12GV0SC",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 2
-    },
-    {
-      "email": "abeeryousef19888888888@gmail.com",
-      "password": "$2a$10$lnCNJXcJ/zGNHYODel8riewXzyQe2AmHMgwvY6b2iFgOwy6UqTKhu",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 3
-    },
-    {
-      "email": "abeeryousef155555598@gmail.com",
-      "password": "$2a$10$DP9ukIb8xMYTDbNFmc8gXu6oi5HIMmRNsktzEUJKVG0ekrzpe04di",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 4
-    },
-    {
-      "email": "abeeryousef19nnnn8@gmail.com",
-      "password": "$2a$10$1Nqm2jBc8j088WTSCQu72.xYTzt2dRiayqBWfCWo4.Eh3atGY8mjy",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 5
-    },
-    {
-      "email": "abeeryousef19777778@gmail.com",
-      "password": "$2a$10$QN2MW.HpAZCn7.BAy01p7edEfT3P0U4Dx3RPsXkHuNw.1DE/nN6/.",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 6
-    },
-    {
-      "email": "abeeryousef19999998@gmail.com",
-      "password": "$2a$10$ZDEvml86oZGxdaUByGN.DucqI4GNW86/o7w7qOt314BhvvcbALFzi",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 7
-    },
-    {
-      "email": "abeeryousef199999998@gmail.com",
-      "password": "$2a$10$mIM1qOwtZVdgW7SV84HuhOcfyL1a/h9QrixmJsrZJK/iUwykBeSWS",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 8
-    },
-    {
-      "email": "abeeryousef1333333098@gmail.com",
-      "password": "$2a$10$NlUrYVSZOwLI8tEOgN4HVeSEbrp2Zf5pZa3kxYSqkjRjkdjL21U0m",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 9
-    },
-    {
-      "email": "abeeryousef1900008@gmail.com",
-      "password": "$2a$10$1QvsxM6eKRnlGs294El7uu9WDZZekBxzeTpIomHIYFRz4UTqHdggi",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 10
-    },
-    {
-      "email": "abeeryousef1989999@gmail.com",
-      "password": "$2a$10$CsgijZVOEIi8EO.Sc7wi2OISMf5TrylJ.21SsTJek8Czh1FDN14ue",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 11
-    },
-    {
-      "email": "abeeryousef195555558@gmail.com",
-      "password": "$2a$10$9pEyTk0lKzJ3QEosXcdQsugn288stOChX1ucHYLG/Qw8USuNzJ3RK",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 12
-    },
-    {
-      "email": "abeeryousef1908@gmail.com",
-      "password": "$2a$10$F1NGgX9s4R0hElmRTW7K9uwCzlbyvyKCU7H23A31en9HRr0cjuwu6",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 13
-    },
-    {
-      "email": "abeeryousef11998@gmail.com",
-      "password": "$2a$10$36K//Urs5f5AEwMcwGJqu.tVWDJsQasvqqNhnWQngyOiAyKOx6v9G",
-      "name": "cc",
-      "role": "user",
-      "isActive": false,
-      "id": 14
-    },
-    {
-      "email": "abeeryousef19118@gmail.com",
-      "password": "$2a$10$1zHEoADpFCmuTIbRJ8y/X.maf1ecUiAntDzul2UsGjlUCpPwMV5ae",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 15
-    },
-    {
-      "email": "abeeryousefaa198@gmail.com",
-      "password": "$2a$10$f7gVthxKUMU/M7kOK9GRY.VBHLYtrPEH.6S5ctAcyU6otMQ8VBBka",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 16
-    },
-    {
-      "email": "abeeryousef1974578@gmail.com",
-      "password": "$2a$10$a1VJLYhPa/g3BxgJyuzZ0Ofb07ptTtOapetjKO2Ve0tKvs1.VyRBO",
-      "name": "saasscccsdvsd",
-      "role": "user",
-      "isActive": false,
-      "id": 17
-    },
-    {
-      "email": "abeeryousef19102365448@gmail.com",
-      "password": "$2a$10$gA8xpKmN79EbNLyizZ2XEuvtyCmZz5yJJteKKl3KDAmx4cFQrkOVq",
-      "name": "saasscccsdvsd",
-      "role": "user",
-      "isActive": false,
-      "id": 18
-    },
-    {
-      "email": "abeeryoudddsef198@gmail.com",
-      "password": "$2a$10$Sb6OXx/ofIBafycs/ZaLjuEvWx1BAuPeQnVtyztP6.fGGV7A4QT9q",
-      "name": "saasscccsdvsd",
-      "role": "user",
-      "isActive": false,
-      "id": 19
-    },
-    {
-      "email": "abeeryousef1ddd98@gmail.com",
-      "password": "$2a$10$bW5V6YPHN83upfGPDd9JYOvlCBpqdgXflqQdNod18BPWlbfAVTeNC",
-      "name": "saasscccsdvsd",
-      "role": "user",
-      "isActive": false,
-      "id": 20
-    },
-    {
-      "email": "abeeryousesdsdsdsdf198@gmail.com",
-      "password": "$2a$10$gt3LRPCoWHDRJ5CeGHwiJePcPzAe4YNTTANluJSe51lXsTCvZCgX2",
-      "name": "saasscccsdvsd",
-      "role": "user",
-      "isActive": false,
-      "id": 21
-    },
-    {
-      "email": "ab00eeryousef198@gmail.com",
-      "password": "$2a$10$LvHB0/SXmX3eM.9M9zAsgut1bN5.2ZBPlIKs0Ow1J.detej77sUKO",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 22
-    },
-    {
-      "email": "abeeryoussssef198@gmail.com",
-      "password": "$2a$10$N4w3oozqLISfjk8Vh3AwbO7Dn/NhkxeJOA7VBkG3PJo5.8Bner3NC",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 23
-    },
-    {
-      "email": "abeeryousef1111098@gmail.com",
-      "password": "$2a$10$p56Ads0Ig.KfURitr.77S.lptqcNd6QHVwAc9Z.jpz7FMK5OwdfrC",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 24
-    },
-    {
-      "email": "abeeryousef111551098@gmail.com",
-      "password": "$2a$10$RFr0qY6bkFUWk.VJs/5PPuEUVD8nx0O/AMVv6zloWvIpqHsYSbGgi",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 25
-    },
-    {
-      "email": "abeeryousef199999999998@gmail.com",
-      "password": "$2a$10$bXfufzkrYl9ZiVG8t5269eVQwsHzuQiMOYjhsgKpGHqwXiQOvhLKe",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 26
-    },
-    {
-      "email": "abeeryousefff198@gmail.com",
-      "password": "$2a$10$ytjrcCwv2XCkm0gC4bOzau1NNM5YdUZs7AtdcoI4MZarBsAGlRQIi",
-      "name": "ssssasa",
-      "role": "user",
-      "isActive": false,
-      "id": 27
-    },
-    {
-      "email": "abeeryousef0f198@gmail.com",
-      "password": "$2a$10$ZEP7V3B.5KHVggnrTgmLm.fIYVM41aIbvQdFk52UyqtLu52G2C7Ui",
+      "email": "abeeryousef10198@gmail.com",
+      "password": "$2a$10$mpyuSM4Wz/EszpkIZqFiwe.rutXlAEMVjCEWlyl5gXQn69SBti/9m",
       "name": "abeer",
       "role": "user",
       "isActive": false,
-      "id": 28
-    },
-    {
-      "email": "abeeryousef19q8@gmail.com",
-      "password": "$2a$10$LZUeFC3UDaeDb.CbLM6o3.ruqUPSSEh7HVCyG/IOFRIDZ99Wex306",
-      "name": "abeer",
-      "role": "user",
-      "isActive": false,
-      "id": 29
-    },
-    {
-      "email": "abeer000yousef198@gmail.com",
-      "password": "$2a$10$Ss.L6v3E47gGFc0w3w8MFu0W65JCw5VglcbQ83MPO3ifbDJCZUg4e",
-      "name": "abeer ffnfng",
-      "role": "user",
-      "isActive": false,
-      "id": 30
-    },
-    {
-      "email": "abeeryouseff0198@gmail.com",
-      "password": "$2a$10$1MgytqcCfqUmbajCn.UzXetIA9LbFg.1XyLW7uk1IX/UfeyyEhU4q",
-      "name": "abeer",
-      "role": "user",
-      "isActive": false,
-      "id": 31
+      "id": 36
     }
   ],
   "campaigns": [
@@ -275,6 +35,11 @@
       "isApproved": true,
       "creatorId": "29",
       "rewards": [
+        {
+          "id": 1757285673666,
+          "title": "Early Bird",
+          "amount": 50
+        },
         {
           "id": 1757285673666,
           "title": "Early Bird",
@@ -436,6 +201,48 @@
       ],
       "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QBhRXhpZgAASUkqAAgAAAABAA4BAgA/AAAAGgAAAAAAAABQb3J0cmFpdCBvZiBhIGdvbGRlbiByZXRyaWV2ZXIgc2l0dGluZyBkb3duIGluIGEgYmVhdXRpZnVsIGZhcm3/7QCKUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAG0cAlAAB0NhcHVza2kcAngAP1BvcnRyYWl0IG9mIGEgZ29sZGVuIHJldHJpZXZlciBzaXR0aW5nIGRvd24gaW4gYSBiZWF1dGlmdWwgZmFybRwCbgAYR2V0dHkgSW1hZ2VzL2lTdG9ja3Bob3RvAP/hBT9odHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iPgoJPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KCQk8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIgICB4bWxuczpHZXR0eUltYWdlc0dJRlQ9Imh0dHA6Ly94bXAuZ2V0dHlpbWFnZXMuY29tL2dpZnQvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwbHVzPSJodHRwOi8vbnMudXNlcGx1cy5vcmcvbGRmL3htcC8xLjAvIiAgeG1sbnM6aXB0Y0V4dD0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcEV4dC8yMDA4LTAyLTI5LyIgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIgcGhvdG9zaG9wOkNyZWRpdD0iR2V0dHkgSW1hZ2Vz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",
       "id": 11
+    }
+  ],
+  "pledges": [
+    {
+      "id": 1,
+      "amount": 50,
+      "campaignId": "3",
+      "date": "2025-09-09T21:49:39.078Z",
+      "rewardId": "1757285883190",
+      "userId": "35"
+    },
+    {
+      "campaignId": "2",
+      "userId": "36",
+      "rewardId": "1757285673666",
+      "amount": 50,
+      "date": "2025-09-09T22:22:19.556Z",
+      "id": 2
+    },
+    {
+      "campaignId": "2",
+      "userId": "36",
+      "rewardId": "1757285673666",
+      "amount": 50,
+      "date": "2025-09-09T22:22:41.532Z",
+      "id": 3
+    },
+    {
+      "campaignId": "2",
+      "userId": "36",
+      "rewardId": "1757285673666",
+      "amount": 50,
+      "date": "2025-09-09T22:24:07.823Z",
+      "id": 4
+    },
+    {
+      "campaignId": "2",
+      "userId": "36",
+      "rewardId": "1757285673666",
+      "amount": 50,
+      "date": "2025-09-09T22:24:31.150Z",
+      "id": 5
     }
   ]
 }

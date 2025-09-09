@@ -10,7 +10,7 @@
   background: white;
   border-radius: 10px;
   padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px $overlay-color;
   text-align: center;
   h1 {
     font-size: 2rem;
@@ -59,9 +59,9 @@
       padding: 0.75rem;
       margin-bottom: 0.5rem;
       border-radius: 6px;
-      border: 1px solid darken($secondary-color, 5%);
+      border: 1px solid $dark-color;
       font-weight: 500;
-      color: #000;
+      color: $dark-color;
     }
   }
 }

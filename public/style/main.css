@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 122;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -585,7 +585,7 @@ body {
   background: white;
   border-radius: 10px;
   padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   text-align: center;
 }
 .campaign-details h1 {
@@ -629,9 +629,89 @@ body {
   padding: 0.75rem;
   margin-bottom: 0.5rem;
   border-radius: 6px;
-  border: 1px solid rgb(214.5665322581, 205.0302419355, 21.9334677419);
+  border: 1px solid #1d2127;
   font-weight: 500;
-  color: #000;
+  color: #1d2127;
+}
+
+.container {
+  margin: 50px auto;
+  width: 100%;
+  max-width: 90%;
+  padding: 0 1em;
+}
+
+.checkout-container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+.checkout-container .checkout-title {
+  color: #d5ae21;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.checkout-container .checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.checkout-container .checkout-form label {
+  text-align: left;
+  font-weight: bold;
+  color: #4c5158;
+}
+.checkout-container .checkout-form .input-error {
+  color: red;
+  text-align: start;
+}
+.checkout-container .checkout-form input {
+  padding: 10px;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  background: #f5faff;
+  outline: none;
+  font-family: cairo;
+  font-size: 14px;
+}
+.checkout-container .checkout-form input:focus {
+  border-color: #d5ae21;
+  box-shadow: 0 0 5px #e8de1e;
+}
+.checkout-container .checkout-form input.is-valid {
+  border-color: green;
+  box-shadow: 0 0 5px rgba(0, 128, 0, 0.3);
+}
+.checkout-container .checkout-form input.is-invalid {
+  border-color: red;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+}
+.checkout-container .checkout-form .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.checkout-container .checkout-form .row .col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.checkout-container .checkout-form .message-box {
+  font-size: 14px;
+  font-weight: bold;
+  height: 18px;
+  margin-top: 5px;
+}
+.checkout-container .checkout-form .message-box.error {
+  color: red;
+}
+.checkout-container .checkout-form .message-box.success {
+  color: green;
 }
 
 /*# sourceMappingURL=main.css.map */

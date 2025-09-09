@@ -17,11 +17,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const generalMsg = document.querySelector("#message");
 
   function validateNameInput() {
-    const result = validateName(nameInput.value);
-    if (!result.valid) {
+    const nameValue = nameInput.value.trim();
+    let error = "";
+
+    if (nameValue.length < 3) {
+      error = "Name must be at least 3 characters";
+    } else if (!/^[A-Za-z\s]+$/.test(nameValue)) {
+      error = "Name must contain only letters";
+    }
+
+    if (error) {
       nameInput.classList.add("is-invalid");
       nameInput.classList.remove("is-valid");
-      nameMsg.textContent = result;
+      nameMsg.textContent = error;
       nameMsg.classList.add("error");
       return false;
     } else {
@@ -130,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     try {
-      const response = await fetch("http://localhost:3000/register", {
+      const response = await fetch("http://localhost:3001/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),

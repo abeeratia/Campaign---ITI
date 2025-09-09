@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/campaigns";
+const API_URL = "http://localhost:3001/campaigns";
 
 export function getAllCampaigns(onlyApproved) {
   return fetch(API_URL)
@@ -17,7 +17,7 @@ export function getAllCampaigns(onlyApproved) {
 }
 export async function getCampaignById(id) {
   try {
-    const res = await fetch(`${API_URL}/${id}`);
+    const res = await fetch(`http://localhost:3001/campaigns/${id}`);
     if (!res.ok) throw new Error("Failed to fetch campaign");
 
     return await res.json();

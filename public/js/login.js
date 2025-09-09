@@ -49,10 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-
   emailInput.addEventListener("input", validateEmailInput);
   passwordInput.addEventListener("input", validatePasswordInput);
-
 
   [emailInput, passwordInput].forEach((input) => {
     input.addEventListener("blur", () => {
@@ -68,11 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-  
     const validEmail = validateEmailInput();
     const validPassword = validatePasswordInput();
 
-   
     if (!validEmail || !validPassword) {
       loginMsg.textContent = "Please fix the errors above before login";
       loginMsg.classList.add("error");
@@ -80,7 +76,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-  
     loginMsg.textContent = "";
     loginMsg.classList.remove("error");
 
@@ -90,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     try {
-      const response = await fetch("http://localhost:3000/login", {
+      const response = await fetch("http://localhost:3001/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
