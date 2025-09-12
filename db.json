@@ -6,14 +6,16 @@
       "name": "abeer",
       "role": "user",
       "isActive": false,
+      "isBlock": false,
       "id": 36
     },
     {
       "email": "abeeryousef1298@gmail.com",
       "password": "$2a$10$2jOJIO.ucZL.JUoS1t2X7eNoR8pamg5ew3zFZ7Rg2gReI2w/e6hme",
       "name": "abeer",
-      "role": "user",
+      "role": "admin",
       "isActive": false,
+      "isBlock": false,
       "id": 37
     },
     {
@@ -22,7 +24,80 @@
       "name": "esraa",
       "role": "user",
       "isActive": false,
+      "isBlock": false,
       "id": 38
+    },
+    {
+      "email": "abeeryouseff098@gmail.com",
+      "password": "$2a$10$tsEsqeLfUvlTdQbQP5Z4me.kyY3jObDv6Gp1np8NbPmkgNZVxiGe2",
+      "name": "abeer",
+      "role": "user",
+      "isActive": false,
+      "isBlock": false,
+      "id": 39
+    },
+    {
+      "email": "abeeryousef19800@gmail.com",
+      "password": "$2a$10$6rFS6zJ7gEzklDxXCl12c.tf/Tf9y3tDRJI5uMz/PU/u0uimGfkfS",
+      "name": "abeer",
+      "role": "user",
+      "isActive": false,
+      "isBlock": false,
+      "id": 40
+    },
+    {
+      "email": "abeeryousef198111@gmail.com",
+      "password": "$2a$10$EfrX5.4NniKtKSsUxRCID.Qeh3bxjmC7EhtTqi7c1UqdQK8.kqs8q",
+      "name": "abeer",
+      "role": "user",
+      "isActive": false,
+      "isBlock": false,
+      "id": 41
+    },
+    {
+      "email": "abeeryousef000@gmail.com",
+      "password": "$2a$10$1UAuQ0yzBAk0iNp/gBISYekH4ppHwzsUjWYmEtbC6zF5KwVM17l.W",
+      "name": "abeer",
+      "role": "user",
+      "isActive": false,
+      "isBlock": false,
+      "id": 42
+    },
+    {
+      "email": "admin123@gmail.com",
+      "password": "$2a$10$M8HgktDIV3qC6PXSl1JlNOj1dQwjmVJsaVhYMcA053IsEAEBWcYW6",
+      "name": "abeer",
+      "role": "admin",
+      "isActive": false,
+      "isBlock": false,
+      "id": 43
+    },
+    {
+      "email": "abeeryousef0202198@gmail.com",
+      "password": "$2a$10$VrKVUp9VpWPMJWSA4buDMuiRk1nHIP3QUiI6FaUfhSahpzJcICsO.",
+      "name": "abeer",
+      "role": "user",
+      "isActive": false,
+      "isBlock": false,
+      "id": 44
+    },
+    {
+      "email": "abeeryousef198010@gmail.com",
+      "password": "$2a$10$9M5XmXXW.HxVtnwrcH/31eWSQpusOspsTfaS5Pz6yi14RFlkq0QWi",
+      "name": "abeer",
+      "role": "user",
+      "isActive": false,
+      "isBlock": false,
+      "id": 45
+    },
+    {
+      "email": "abeeryousef2000@gmail.com",
+      "password": "$2a$10$.3zqvNXwWh2.lsC/qxl/beQ..QwlxLf2toh9eW7gy2i71rih2k1tu",
+      "name": "abeer",
+      "role": "user",
+      "isActive": false,
+      "isBlock": false,
+      "id": 46
     }
   ],
   "campaigns": [
@@ -46,14 +121,14 @@
       "title": "qq",
       "description": "qq",
       "goal": 66,
-      "deadline": "2025-09-25",
+      "deadline": "2025-09-30",
       "isApproved": true,
       "creatorId": "29",
       "rewards": [
         {
           "id": 1757285883190,
-          "title": "Early Bird",
-          "amount": 50
+          "title": "asacs",
+          "amount": 52
         }
       ],
       "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSEhIWFRUVFRUVFRcVFRUWFRcVFRUWFxUVFRYYHSggGBolHRcVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQGi0dHR0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rKy0tLS0tLS0tLS0tLS0tLS0rLS0tLS0tLS0tLf/AABEIAL4BCQMBIgACEQEDEQH/xAAbAAADAQEBAQEAAAAAAAAAAAABAgMEAAUGB//EAEIQAAEDAgIHBQQIBAQHAAAAAAEAAhEDIRIxBEFRYXGR8AUTgaGxBiLB0RQyQlJTkuHxFSNDYhYzk6I0coKzwtLi/8QAGgEBAQEBAQEBAAAAAAAAAAAAAQACAwQFBv/EAC0RAAICAQIEBQQBBQAAAAAAAAABAhESAwQhMUFRExRSYYEFQpGhIhUjJDJT/9oADAMBAAIRAxEAPwD2wEITBPC+9Z+foQJgmDUQ1RICZEBcQo0CEQEQmAUQAEyK5AiyiuIQhRDBApQEVEDClIKeUYVZESEi0EJcKrIiUpVixDu02FEk0b0SxLChGDk3eKSCzQ2WxqZKQlAvRQ2c529Tcd6JKm4JBsUkqbiUxCBSBFym5XIUnMVYEHJFVwSYUgfQNKoEgYiAoCgTQkBTgoFHQjCIKYIsRIRCaFwCrKgFcmhdChAhCeF0IImiCnXQlshZQTwhgRZCkoJixdgUQsIEJi1CEWRNzUpCshhTY0QKBCsWpS1VlRAhIQtBalLU2VGchKWq5alLVWBmIQWhzVNzUWREhIWqxalLVWNGZ4SYVpc1JhVYUew0qiQNTgJMBhELgEwCLGgJwuATAKEAThq4NRwrJoJYlLFUBFVjRHCuwquFdhRZUSwo4U8IhqrKieFDCr4UMKsholC7AqwjCLGiGFAhWwLsKrKiBalwLRgQwIyDEz4UC1aMCGFWQ4mctQLFqwJe7VkhxMjqaQsWwsU3NRkWJkc1IWLWaaQ005BiZMCUtWk00hpqyHEyvYkwLQ5qXArIKPRa1OGotCcBbs50ABOGrmpwFmxoWEYTgJoVkNCYUQ1OAmDUWNCBGE4ajhQ2NCBq7CqAI4UWNE8KIaqAIwjIqJYUcKoGo4UZGkiWFHCqYUcKzkKRHCuwq2BdgVmaxIYF2BaC1DCjIcTPhQwrRhQwoyHEgGpXNV8KUtVkWJnLUpatBalc1WRYmUsSFq1FqQtVkWJkc1IWLU5qmWqUixMjmpMK0ualwpyDFmoBOlBTNXVs8w4CcBTaU4RZpDAJgEAUwRYhARhAJgiyDCICCKGxDCMLgmAQ2KBCaF0IhZsTgEYXIhFmkdC6FyMrLZpHQuhFdKzZsEIEJpQKLEQhDCmKUlVlwAQlIRJSkqsgEJHBMSlLlWQjgpuCdzlNzgqyoUqTk7nhSc9NlQjglhFzkmJVlRw06l+Iz8zfmmHaFL8Rn5gvV/wqwD/OMxacOf5Sub7NN11o4BjvWmFz89H0s8/lp+qJ5Y7RpfiN5pv4nS/EHn8l7NP2bpjOu47u6pR5MnzWlnYdHLGTwDW+jVPer0svLT9cT54dqUvv8g4/BUZ2gw5YjwY8+jV9HT7Jpj7T/wA3/wApndl0jZ0uG95d5RCPOP0mvLvrNHzrtOaMw/8A06n/AKpvpg+6/wD03/Je59ApMPu0iRnIdhHiMWfgmc2k0iRUk6gKjhc54rgeJhHm59Ij4Ef+iPC+mj7rvylO3Sv7H/l/Ve9ipgD+U59hc4JO8gkeiUspkghoaJuO7bMQRntmDO5HmdR/aXh6S56h5DKpP2Hch8Cqh5+6V69UsLS0ECRF2tIg52EeqysogGe+fOIus4gSQBlJtYWyR4us+SG9uuczM1rzkxx8D8kp7z8F/JbX1AB9d1TdUcA3xwsleVVpSbinvHeVOX1UqWu+hl6u1XOZV1R4/pP5IOqvAnuneSd1SnaWU2xlhc42jXAbPilfpujNAxBlhEw7mb3O9X+R7GPM7PpMzVdPc3+k/kfkpfxN/wCC7xkeoWhnbOitECo3wefSZWTS/aHRZvUdOxpcfgqtd9jL3W26NjP7VcM2f7h8lH+PjItA4n9Eg9rNHaAA553nEd95MJavtxTH2XnfDfWVpQ1urRynvdKPJSLO7d3D8zR6kJD27/bPAtPo5ZR7Vgn3abjvAYfMGVz+26j7+8OJcPKV2WhqPqebU+q6cPtl+TaO0qhypHxgfFWxaQcmNHFzR8V4z+0Xn7bvX1WSrXcftHk35LotrPueb+sqXKLXye6/SntPvOYNwlziSYENkSNsLBpftLTpVe7qPIPd94P5VaTZpiXBrBmPtZkCxIXltrvaZa94PEfBZtNe6p9Z78ohrg3UNnAclS2s+jPXt/q2lX9xOz19J9pmtqd2XExBLmUqnd+/OANe4w9uqRBJByILVPtL2jbRe5rjZoaS7BVbm0EgY2gFw2AnIzkY+fq0DJPfV7kE/wA99yA1t5OxoHBZaugiSW1KzQXF0Cs8jE76x94mSdpvdZ8tqHrX1PbPv+D6Sh7UNFZtJ+IE1DTLnMAZEhmNrrBzcUkHFBA4wjvaVjnOa1tdzpgAaO5tyC9rbuI+rGRNrr5saMWuBFSt7rnPA7xxgucXOIJuJJJnedpSmmQQcdT3cOH+Y62CMME3tA1pjtp3xNT+o6El/Gz1X+2LfuVOTPmoO9tW/h1P9i82pTadR5qDtHbv5rt4CPIt2/c9N/tsPw382/JT/wAbj8N35m/JeW/RG9FS+gDqEeEjqtyu7P19vblSf8ipzox/3Fpb2pUI+q4cS31BIXx38T2mPHzMlGpp4sTUjfIGeWtcvDh7HxXPX9L/AGfaM7Rdrt4ou7T/ALvMr4irpDHD/NA34gDwvKyHQaJzfN8zVd8HQrGHShXifda+Gfa1u36QzrMG2agHxUn+07Mm1KbjqHej1Er45vZOjG8NIys9w/8AJCromizEUwTa9QAzqgF+aKXsdUu+f4Pp6ntTVBiKI13rDnkLKFT2i0n7+it3lzz8fmvnG9itd9UjWbOxA6sy5D/DomC8jx+Z2blV2OspaK618H1f8WqnPSaTdwh0bbEeq6pptQXOlOI2NYz4NK+W0f2abYufOz3QR55jwXqaJ2exgjC0xrwsB5gLcYex5NbVhHlK/g3u7QcRIq1b65nywx5KPf1Cf+JqAf3YR6x81l0jQqbjOATussNXQfuyDuPqIgrWFGI7iL618I9oVn5nSeRz5PTDT2j61Yu/6j8F8+7Qn5iCY1gGOF4UToFQa99sIE+GSaroGMZc5/pH0L+1qQvjHMlSqdr09zt1jPhK8L6M4CPUn9iu+juOc+YvuA9Vq32BbbSTvJnpVe3aYkd0Y307eqUdvgiO7YBsLM9loPmsPdReM9sn1RjV6IpnZOEVwv8AJvqdoH7lMbPdYLHgEo09/wB1sxqAHmAoCBlnqn4J8RGv4eepaSOcpRfNFRp1Q3AkRs/RUbpT9kcZCzd87f6hD6W6bgea2mcpQi+UUa+/OsfFKa+5TGkHYh3m7yW0zlguwXVFN7QcwOQTkhLjHUJs0lXIl3I1ADgEppqjipPd1KrOisRzApOYqY1NzkWdI2RqU1F1ILQXdSovKD0RbMz6ZGrzUoP3fNanOCSRtWTspM9PExs42tiT/UNjriACPD9EKOl0WuMMEkanYuNpzOcERs37KDGsgBjRtOBoJ5QsWn9qvY4NaBhnU3ysQvnvbJcWfRh9VzeMUb9E0hhJwNkxdoDZEA3lrSfh5qzgB/TGYiS4mcjkJ8CJtrXz7+2cM+64k5gkMbneWgm+qc1Gp21iN2gbwHkWECIIg7x+/lnoO+CPp6evHH+TPp31gCB3d8jYwAAb2vrHwlZ9IY4wPeFpBviIM/ZIMZrwqXb7AINNwibhkgzcky8GZGzKNl7j2gpAH+XUB+z7rYyi/v21dWPHy81yR2Wvp9zXU0SmT73ePJuYJi223C9kadMtnA6rAm2K0+MYgP7Ym+Swf4gpHNtTb9UEZi0teCRyyXD2iokgmm47cLAZEZY3PBHKbDJbjDWXc5z8Cf8AtTPTp1KxJg6zANKo0nKBESTnf91rpac+PebB/wCYZ7De3ivnavtEILWh5aRFw1riIjCfddbxgmZsYWen2xVIwspgQZkhpNogGwbEyctZXohLXR4NXZbKfFxo+hf2s4YrN90xrJJ3XAP7JKPtAw6yZ2NjmA4r51mg1qlwI2e63CNwAhbaPZta3vjxZEeq9MJavU+brbTZrhHgfSs0thEzzVmVAcrrxtE0Ko0y5+IbIEdeC9Jnh4R6L1RbfM+LraMIuouzQSF0qOJEOO5bOGLHMIOpDYFweuxdWSStCd0EDTCpKQv3+quBpNi4R1CDqbdiDnBIXbDzUaSYTTGpAtSF52eqSo+bTzVZ0UWFwSwkujj6hRtRYHFTJTE9XSO6sg6IQnq8qTiZVHt6KUt3evyQdFRFwUHjetTuPM/NTd1cIOqZieHaneSEP+95Faizih3fUoo7Zo9t0DNKAwpCx3R+CEO6Cmz5qjXU0inTAgAeluCm3Q6X3fLNTqA9fouNQ29VOhWfRlH6HT2Dwt6JvolMDJSbV280xPUhHALn3BV0Np+yE7tHbqEbhl6rqZOQTCkeCqReJLuI7QhraCupaGAbBaWNdxRZVIzhNIw9Wfc5tIKmAbAkLuHilaSbGFrgcuL5mlkLnNUi8ZT5oufbNNmMWdiGznC6R+37qZO8KT+KLNKNmjF10VnfpDtQ8wg2Qf2TFB0SS5nNrHh4pxVtmo92Ov0C7COp+KbKo9Di47Clk8Ot67CBkeQRnxVZoJE6+UIR49bEpk6kOKrEEDdyC4kIF3XRQJ6Mqs0hY2IFEkoE9SqzQjh1H6oQP2XF3DzRxdD5qs2TwdXSObx8k/XVkhIUbRJzdyFkxPDzS4uHMoOiPdMbeVkAOipiRcfD0Xd4o8DRQt6lEQlAGtOH9BRk4M3eiBO09eK6UC5RD5IBx28oKUnagTv9FAkVDyg95QY+2SUnaoqGaZ3IQZzTOqDwSajkPFQpC1Z3+BBXUBO3fqSNCsTIsOt6Db5BcN/W9AttqUsSD6sJsMWVpjaAuc7oFK11ksjgoEigbuKmSRYg80zSNpSv4HzUKOPV1xdvSYhsXTsVY0EHf5BAu3lDEdoQxHaEWaSGLt6iSdfkiOCJfw68UmkqJ95HV0C5CoJ1rO+Qs3R2UbLPO/0UXFTnceS4uRZtQY5f1dAv4qDnceSXH1dWRtQLOeEMag56njRkbUT6Uc0mOEHP4n0XGDrHlsWrPn0aqMEa+tSQug7lmxx4p6QnWmzLhTtlGlGYKk43jdqCAPjzRZYl5C6Rn8lNtRAu3nz+aQxHd69eCTEcvmjqnooh3VlGhm80XDWLKZeEQFBXELba56zTYzt9FFx1/GyowgjLykIsWgY99/LyCp3Qi6zup8PRUBMXjmPSVWTXY5wgwMkDKgX3/VVa9Vi40XcTGakSeHWtIXyhiG7mFWUYjePogIhJXYItnO4iEKZtb1uqzVcByN3klxQmDuroPfZVgTL75Sued3xQB4+cfug47/NVnShC4KL7/NM465UXZz15rLOsInDxKGHj4hMgd6LOhKoOv3UXg7+uC0HqM1F7BtQzpEzGoUve9dFO+mdo8Und7m8/1WTulE+j0SqAYPCYtOxDSHjVq4c81l7yJ3KlIF2We3Wt2fPxS4hdWMAgkg6sxPzVqNUxfYI2qb6cHabZ8lF1cwonHJcDeyp18k73T4bVj0N8idQPXotFacgfJKOMoVKjmka12Mako12G7NKZF1DiPTN7iOIN+Cq5ylNphI4wZ/X5KKkyxbe88vigHjr5pO9tEIscDFtqgruLWO7rYraPTkTihB9Cbk5BFzoGSSb4cBu7OojflsSh0ZqPfGYsrF86hYIMtNcxXtnXyMqMwrOYDkI/VZHuIKjaVmhsDNGG7PKymxxyttuqimYJsLahZREq26TwlBu2Pmg57mmJvwn1TVKbokulRqqQzn9ZqZqhHCR4pONyokh8ak8gWRLiJUq7slG4riJi8FJz75qjaUqdSxuB1xWTtFBxIByB3qVQqs0o2UMRmpOO9UaREfAKVXUg0kBJhOxEuU8Y3+SDokf/2Q==",
@@ -308,6 +383,14 @@
       "amount": 50,
       "date": "2025-09-12T09:34:49.631Z",
       "id": 14
+    },
+    {
+      "campaignId": "3",
+      "userId": "45",
+      "rewardId": "1757285883190",
+      "amount": 50,
+      "date": "2025-09-12T11:06:58.881Z",
+      "id": 15
     }
   ]
 }

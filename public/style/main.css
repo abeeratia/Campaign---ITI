@@ -648,6 +648,64 @@ body {
   color: #1d2127;
 }
 
+.payment-word {
+  color: rgb(13, 47, 28);
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+.payment-word:hover {
+  color: green;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup .popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 10px #1d2127;
+}
+.popup .popup-content p {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: red;
+}
+.popup .popup-content button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.popup .popup-content button#popupLoginBtn {
+  background: #d5ae21;
+  color: #1d2127;
+}
+.popup .popup-content button#popupLoginBtn:hover {
+  background: #d5ae21;
+  color: white;
+}
+.popup .popup-content button#popupCloseBtn {
+  background: red;
+  color: white;
+}
+.popup .popup-content button#popupCloseBtn:hover {
+  background: #4c5158;
+}
+
 .container {
   margin: 50px auto;
   width: 100%;
@@ -928,6 +986,135 @@ h2 {
 .pledge-card .date {
   font-size: 12px;
   color: #6c757d;
+}
+
+#admin {
+  display: flex;
+}
+
+.containers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  background-color: #1d2127;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  z-index: 100;
+}
+.sidebar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #d5ae21;
+  text-align: center;
+}
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar .menu li {
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+.sidebar .menu li:hover {
+  background-color: #4c5158;
+}
+.sidebar .menu li.active {
+  background-color: #d5ae21;
+  color: #1d2127;
+  font-weight: bold;
+}
+.sidebar .tab-content {
+  margin-top: 15px;
+  background: white;
+  color: #333;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  display: none;
+}
+.sidebar .tab-content.active {
+  display: block;
+}
+.sidebar .tab-content h2 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #d5ae21;
+}
+.sidebar .tab-content p {
+  font-size: 13px;
+  color: #333;
+}
+
+.users-container {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+.users-container h1 {
+  text-align: center;
+  color: #d5ae21;
+  margin-bottom: 20px;
+  margin-left: 8em;
+}
+.users-container table {
+  margin-left: 8em;
+  width: 100%;
+  border-collapse: collapse;
+  max-height: 25vh;
+}
+.users-container table th,
+.users-container table td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 14px;
+}
+.users-container table th {
+  background-color: #d5ae21;
+  color: white;
+}
+.users-container table tr:nth-child(even) {
+  background-color: #f5faff;
+}
+.users-container table button {
+  margin: 2px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.users-container table button.btn-role {
+  background-color: #e8de1e;
+  color: #1d2127;
+}
+.users-container table button.btn-role:hover {
+  background-color: #f7ca7c;
+}
+.users-container table button.btn-active {
+  background-color: rgb(13, 47, 28);
+  color: white;
+}
+.users-container table button.btn-active:hover {
+  background-color: rgb(1.95, 7.05, 4.2);
 }
 
 /*# sourceMappingURL=main.css.map */

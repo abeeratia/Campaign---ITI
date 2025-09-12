@@ -1,3 +1,4 @@
+
 const token = localStorage.getItem("token");
 function navBar() {
   return `
@@ -8,9 +9,10 @@ function navBar() {
       <ul class="nav__list">
         <li><a href="/index.html" class="nav-link">Home</a></li>
         <li><a href="/pages/about.html" class="nav-link">About</a></li>
+        <li><a href="/pages/groupcampaign.html" class="nav-link">Show Campaigns</a></li>
        ${
          token
-           ? `<li><a href="/pages/groupcampaign.html" class="nav-link">Show Campaigns</a></li>
+           ? `
         <li><a href="/pages/campaign.html" class="nav-link">Add Campaigns</a></li>`
            : ""
        } 
@@ -35,6 +37,7 @@ function menuToggle() {
 
 function logOut() {
   localStorage.removeItem("token");
+  localStorage.clear()
   location.reload();
   window.location.href = "/index.html";
 }

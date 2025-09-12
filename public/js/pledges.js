@@ -1,5 +1,7 @@
 import { getCampaignById } from "./crudcampaign.js";
 import { NavBar } from "./navbar.js";
+
+
 NavBar();
 
 const user = localStorage.getItem("userId");

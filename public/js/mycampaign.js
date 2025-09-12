@@ -1,6 +1,7 @@
 import { NavBar } from "./navbar.js";
 NavBar();
-
+import {protectRoute}from './protectrout.js'
+protectRoute();
 const user = Number(localStorage.getItem("userId"));
 const container = document.getElementById("campaign-container");
 

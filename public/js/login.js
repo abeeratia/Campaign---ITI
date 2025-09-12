@@ -103,13 +103,19 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("userId", result.user.id);
       localStorage.setItem("userName", result.user.name);
       localStorage.setItem("userIsActive", result.user.isActive);
-      localStorage.setItem("userIsRole", result.user.role);
+      localStorage.setItem("role", result.user.role);
 
       localStorage.setItem("token", result.accessToken);
       loginMsg.textContent = "Login successful!";
       loginMsg.classList.add("success");
 
-      setTimeout(() => (window.location.href = "/index.html"), 1000);
+      setTimeout(() => {
+        if (result.user.role === "admin") {
+          window.location.href = "/pages/admin.html";
+        } else {
+          window.location.href = "/index.html";
+        }
+      }, 1000);
     } catch (err) {
       console.error(err);
       loginMsg.textContent = "Network or server error";

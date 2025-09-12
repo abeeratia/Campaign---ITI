@@ -1,6 +1,7 @@
 import { getCampaignById } from "./crudcampaign.js";
 import { NavBar } from "./navbar.js";
-
+import {protectRoute}from './protectrout.js'
+protectRoute();
 NavBar();
 
 const hash = location.hash.split("#");

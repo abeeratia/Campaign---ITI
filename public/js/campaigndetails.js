@@ -1,16 +1,16 @@
 import { NavBar } from "./navbar.js";
 import { getCampaignById } from "./crudcampaign.js";
-
+import {protectRoute}from './protectrout.js'
+protectRoute();
 const campaignId = window.location.hash.substring(1);
-
 const campaignDetailsDiv = document.getElementById("campaign-details");
 
 document.addEventListener("DOMContentLoaded", async () => {
   NavBar();
+  const token = localStorage.getItem("token");
 
   try {
     const campaign = await getCampaignById(campaignId);
-    console.log(campaign);
 
     if (!campaignId || !campaign) {
       campaignDetailsDiv.innerHTML = `<p style="color:red;">Campaign not found.</p>`;
@@ -25,10 +25,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             .map(
               (reward) => `
                 <li class="rewards">
-                  <strong>${reward.title}</strong> ${reward.amount} 
-                  <p >
-                  
-                    <a href="../pages/checkout.html#${campaignId}#${reward.id}">Payment</a>
+                  <strong>${reward.title}</strong> ${reward.amount}$
+                  <p>
+                    <span class="payment-word" data-reward="${reward.id}">Payment</span>
                   </p>
                 </li>
               `
@@ -47,6 +46,42 @@ document.addEventListener("DOMContentLoaded", async () => {
       <h3>Rewards:</h3>
       ${rewardsList}
     `;
+
+    document.querySelectorAll(".payment-word").forEach((span) => {
+      span.addEventListener("click", () => {
+        const rewardId = span.getAttribute("data-reward");
+
+        if (token) {
+          window.location.href = `../pages/checkout.html#${campaignId}#${rewardId}`;
+        } else {
+          if (!document.getElementById("loginPopup")) {
+            const popup = document.createElement("div");
+            popup.id = "loginPopup";
+            popup.className = "popup show";
+            popup.innerHTML = `
+              <div class="popup-content">
+                <p>You must login to continue.</p>
+                <button id="popupLoginBtn">Login</button>
+                <button id="popupCloseBtn">Close</button>
+              </div>
+            `;
+            document.body.appendChild(popup);
+
+            document
+              .getElementById("popupLoginBtn")
+              .addEventListener("click", () => {
+                window.location.href = "../pages/login.html";
+              });
+
+            document
+              .getElementById("popupCloseBtn")
+              .addEventListener("click", () => {
+                popup.remove();
+              });
+          }
+        }
+      });
+    });
   } catch (error) {
     console.error("Error loading campaign details:", error);
     campaignDetailsDiv.innerHTML = `<p style="color:red;">Failed to load campaign details.</p>`;

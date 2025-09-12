@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
         (msg) => (msg.textContent = "")
       );
 
-      setTimeout(() => (location.href = "/index.html"), 1000);
+      setTimeout(() => (location.href = "/pages/login.html"), 1000);
     } catch (err) {
       console.error(err);
       generalMsg.textContent = "Network or server error";
