@@ -1024,17 +1024,18 @@ h2 {
   padding: 0;
   margin: 0;
 }
-.sidebar .menu li {
+.sidebar .menu li, .sidebar .menu a {
+  color: white;
   padding: 10px;
   margin-bottom: 8px;
   cursor: pointer;
   border-radius: 6px;
   transition: background 0.3s;
 }
-.sidebar .menu li:hover {
+.sidebar .menu li:hover, .sidebar .menu a:hover {
   background-color: #4c5158;
 }
-.sidebar .menu li.active {
+.sidebar .menu li.active, .sidebar .menu a.active {
   background-color: #d5ae21;
   color: #1d2127;
   font-weight: bold;

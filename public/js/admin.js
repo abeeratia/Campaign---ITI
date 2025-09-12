@@ -1,4 +1,4 @@
-import { protectRoute } from "./protectrout.js";
+// //import { protectRoute } from "./protectrout.js";
 
 const token = localStorage.getItem("token");
 const role = localStorage.getItem("role");
@@ -9,8 +9,8 @@ function sidebarLayout() {
       <div>
         <div class="logo">Admin Panel</div>
         <ul class="menu" id="sidebarMenu">
-          <li data-tab="users" class="active">Users</li>
-          <li data-tab="campaigns">Campaigns</li>
+          <a href="/pages/admin.html"><li data-tab="users" class="active">Users</li></a>
+          <a href="/pages/campaignsMange.html"><li data-tab="campaigns">Campaigns</li></a>
           <li data-tab="pledges">Pledges</li>
         </ul>
       </div>
@@ -54,5 +54,5 @@ export function AdminSidebar() {
 
 document.addEventListener("DOMContentLoaded", () => {
   AdminSidebar();
-  protectRoute();
+  // protectRoute();
 });
