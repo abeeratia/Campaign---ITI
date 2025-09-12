@@ -24,111 +24,96 @@ const generalMsg = document.getElementById("general-msg");
 
 payMent.addEventListener("click", async (e) => {
   e.preventDefault();
-  console.log(e);
+
+  // reset errors
   nameError.textContent = "";
   cardError.textContent = "";
   expiryError.textContent = "";
   cvvError.textContent = "";
   generalMsg.textContent = "";
- let valid = true;
+
+  let valid = true;
 
   if (nameInput.value === "") {
     nameError.textContent = "Name is required";
-    nameError.classList.add("error");
     nameInput.classList.add("is-invalid");
     valid = false;
-  }else{
-     nameError.classList.add("success");
-      nameInput.classList.add("is-valid");
+  } else {
+    nameInput.classList.add("is-valid");
   }
 
   if (cardNumberInput.value === "") {
     cardError.textContent = "Card number is required";
-    cardError.classList.add("error");
     cardNumberInput.classList.add("is-invalid");
     valid = false;
   } else {
-    cardError.classList.add("success");
     cardNumberInput.classList.add("is-valid");
   }
 
   if (expiryInput.value === "") {
     expiryError.textContent = "Expiry date is required";
-    expiryError.classList.add("error");
     expiryInput.classList.add("is-invalid");
     valid = false;
   } else {
-    expiryError.classList.add("success");
     expiryInput.classList.add("is-valid");
   }
 
   if (cvvInput.value === "") {
     cvvError.textContent = "CVV is required";
-    cvvError.classList.add("error");
     cvvInput.classList.add("is-invalid");
     valid = false;
   } else {
-    cvvError.classList.add("success");
     cvvInput.classList.add("is-valid");
   }
 
-
   if (!valid) {
     generalMsg.textContent = "Please fix the errors above.";
-  } else {
-    generalMsg.textContent = "Payment processed successfully!";
+    return;
   }
- 
 
-  const reward = await getCampaignById(campaignId);
-  console.log(reward);
+  // ============== get reward amount ===========
+  const campaign = await getCampaignById(campaignId);
 
-  const data = reward?.rewards.map((elm) => {
-    console.log(elm);
-    return {
-      id: elm.id,
-      amount: elm.amount,
-    };
-  });
+  const reward = campaign?.rewards.find((r) => r.id == rewardId);
 
-  const amountValue = data.find((amount) => {
-    // console.log(typeof(amount.id),Number(rewardId));
-    return amount.id == rewardId;
-  });
+  if (!reward) {
+    generalMsg.textContent = "Reward not found!";
+    return;
+  }
+  // ============== show confirmation dialog ===========
+  const confirmPay = confirm(
+    `Are you sure you want to pay $${reward.amount} for this campaign?`
+  );
 
+  if (!confirmPay) {
+  generalMsg.textContent = "Payment cancelled by user.";
+    return;
+  }
+
+  // ============== make pledge ===========
   const pledges = {
     campaignId: campaignId,
     userId: userId,
     rewardId: rewardId,
-    amount: amountValue.amount,
+    amount: reward.amount,
     date: new Date().toISOString(),
   };
 
-  console.log(pledges);
+  try {
+    const response = await fetch(`http://localhost:3001/pledges`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(pledges),
+    });
 
-  const dataPledges = await fetch(`http://localhost:3001/pledges`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(pledges),
-  });
-
-  console.log(dataPledges);
-
-   if(dataPledges){
-        window.location.href ="./../index.html"
-    } 
+    if (response.ok) {
+      generalMsg.textContent = "Payment processed successfully!";
+      window.location.href = "./../index.html";
+    } else {
+      generalMsg.textContent = "Error processing payment!";
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    generalMsg.textContent = "Something went wrong!";
+  }
 });
-
-
-
-
-// try {
-//   const response = await fetch(`http://localhost:3000/pledges/?userId=${id}`);
-//   const data = await response.json();
-//   return data;
-// } catch (error) {
-//   console.error("Error updating campaign:", error);
-//   throw error;
-// }

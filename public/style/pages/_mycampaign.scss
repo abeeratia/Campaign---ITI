@@ -1,0 +1,160 @@
+@use "../abstracts/variables" as *;
+@use "../components/btns" as *;
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 15px 0;
+  color: $primary-color;
+  text-transform: capitalize;
+}
+
+.campaign-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px auto;
+  width: 100%;
+}
+
+.campaign-card {
+  // //background-color: $third-color;
+  color: $light-color;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.campaign-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  // border: 3px solid $secondary-color;
+}
+
+.campaign-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: $active-color;
+}
+
+.campaign-description {
+  font-size: 14px;
+  color: $active-color;
+  margin-bottom: 12px;
+}
+
+.campaign-info {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+  background: $light-gray;
+  color: $active-color;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+
+  p {
+    margin: 5px 0;
+  }
+}
+
+.rewards {
+  margin-top: 10px;
+}
+
+.reward {
+  display: flex;
+  justify-content: space-between;
+  background: $third-color;
+  color: $dark-color;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.status-approved {
+  color: $text-success;
+  font-weight: bold;
+}
+
+.status-pending {
+  color: $primary-color;
+  font-weight: bold;
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  background: $overlay-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .popup-content {
+    background: $light-color;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+
+    h3 {
+      margin-bottom: 15px;
+      text-align: center;
+      color: $dark-color;
+    }
+
+    label,
+    .reward-edit {
+      display: block;
+      margin-bottom: 10px;
+
+      input {
+        width: 100%;
+        margin-top: 5px;
+        padding: 5px;
+        border: 1px solid $light-gray;
+        border-radius: 5px;
+      }
+    }
+
+    .popup-buttons {
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:first-child {
+          background: $primary-color;
+          color: $light-color;
+        }
+        &:last-child {
+          background: $gray-color;
+          color: $light-color;
+        }
+      }
+    }
+  }
+}

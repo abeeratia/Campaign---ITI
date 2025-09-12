@@ -1,9 +1,7 @@
 import { NavBar } from "./navbar.js";
 import { getCampaignById } from "./crudcampaign.js";
 
-
 const campaignId = window.location.hash.substring(1);
-
 
 const campaignDetailsDiv = document.getElementById("campaign-details");
 

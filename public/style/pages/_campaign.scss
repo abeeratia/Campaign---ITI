@@ -4,7 +4,7 @@
 .container {
   margin: 50px auto;
   width: 100%;
-  max-width:100%;
+  max-width: 100%;
   padding: 0 1em;
 }
 
@@ -12,10 +12,10 @@
   max-width: 900px;
   margin: 2rem auto;
   padding: 1rem;
- 
-.form-message{
-  padding: 20px;
-}
+
+  .form-message {
+    padding: 20px;
+  }
 
   .campaign-form {
     background: $light-color;
@@ -32,7 +32,7 @@
 
     h2 {
       margin-bottom: 1rem;
-      font-size: 1.3rem;
+      font-size: 2rem;
       color: $primary-color;
       text-align: center;
     }

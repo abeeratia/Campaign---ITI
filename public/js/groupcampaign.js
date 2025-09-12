@@ -8,7 +8,7 @@ const campaignsContainer = document.getElementById("campaignsContainer");
 const searchInput = document.getElementById("searchInput");
 const sortSelect = document.getElementById("sortSelect");
 
-let allCampaigns = []; 
+let allCampaigns = [];
 
 function showCampaigns(list) {
   campaignsContainer.innerHTML = "";
@@ -30,7 +30,7 @@ function showCampaigns(list) {
           <span>Goal: ${camp.goal}</span>
           <span>Deadline: ${camp.deadline}</span>
         </div>
-        <div class="status approved">Approved</div>
+        <div class="status approved"></div>
         <a href="/pages/campaigndetails.html#${camp.id}">
           <button class="btn btn--full">Show Details</button>
         </a>
@@ -59,10 +59,10 @@ function filterAndSortCampaigns() {
 
 async function loadCampaigns() {
   try {
-    const data = await getAllCampaigns(); 
+    const data = await getAllCampaigns();
     console.log(data);
-    allCampaigns = data.filter((camp) => camp.isApproved === true); 
-    showCampaigns(allCampaigns); 
+    allCampaigns = data.filter((camp) => camp.isApproved === true);
+    showCampaigns(allCampaigns);
   } catch (err) {
     campaignsContainer.innerHTML = `<p style="color:red;">${err.message}</p>`;
   }

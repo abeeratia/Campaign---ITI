@@ -20,6 +20,7 @@
     margin-bottom: 20px;
     color: $secondary-color;
     font-weight: bold;
+    font-size: 2rem;
   }
 
   &__form {
@@ -57,7 +58,7 @@
       }
 
       &.is-invalid {
-        border-color:$text-error;
+        border-color: $text-error;
         box-shadow: 0 0 5px rgba($text-error, 0.3);
       }
     }
@@ -68,7 +69,7 @@
       min-height: 18px;
 
       &.error {
-        color:$text-error;
+        color: $text-error;
         font-weight: bold;
       }
       &.success {
@@ -79,7 +80,7 @@
   }
 
   #login-msg {
-    display: block; 
+    display: block;
     font-size: 16px;
     margin-top: 20px;
     min-height: 20px;
@@ -107,7 +108,7 @@
     }
   }
 
-  &__text{
+  &__text {
     display: flex;
     justify-content: flex-start;
     align-items: center;

@@ -74,6 +74,8 @@ export let NavBar = () => {
   if (token) {
     navSign.innerHTML = `
       <div class="log">
+        <p><a href = "../pages/mycampaign.html"> My Campaign </a></p>
+        <p> <a href="../pages/pledges.html">  My Pledges </a> </p>
         <p>Hi ${userName}</p>
         <p id="logout">Logout</p>
       </div>

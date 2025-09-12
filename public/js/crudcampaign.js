@@ -49,7 +49,7 @@ export async function addCampaign(newCampaign) {
 export async function updateCampaign(id, updatedData) {
   try {
     const res = await fetch(`${API_URL}/${id}`, {
-      method: "PUT",
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },

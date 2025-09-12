@@ -35,10 +35,9 @@
       color: $gr-color;
     }
 
-    .input-error{
+    .input-error {
       color: $text-error;
       text-align: start;
-
     }
 
     input {
@@ -54,14 +53,14 @@
         border-color: $primary-color;
         box-shadow: 0 0 5px $secondary-color;
       }
-      
+
       &.is-valid {
         border-color: $text-success;
         box-shadow: 0 0 5px rgba($text-success, 0.3);
       }
 
       &.is-invalid {
-        border-color:$text-error;
+        border-color: $text-error;
         box-shadow: 0 0 5px rgba($text-error, 0.3);
       }
     }
