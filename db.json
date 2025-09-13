@@ -207,7 +207,7 @@
       "description": "a",
       "goal": 50,
       "deadline": "2025-09-29",
-      "isApproved": false,
+      "isApproved": true,
       "creatorId": "29",
       "rewards": [
         {
@@ -224,7 +224,7 @@
       "description": "aaaa",
       "goal": 2000,
       "deadline": "2025-09-28",
-      "isApproved": false,
+      "isApproved": true,
       "creatorId": "29",
       "rewards": [
         {
@@ -241,7 +241,7 @@
       "description": "aaaa",
       "goal": 20,
       "deadline": "2025-09-29",
-      "isApproved": false,
+      "isApproved": true,
       "creatorId": "31",
       "rewards": [
         {

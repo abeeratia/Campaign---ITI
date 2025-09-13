@@ -11,7 +11,7 @@ function sidebarLayout() {
         <ul class="menu" id="sidebarMenu">
           <a href="/pages/admin.html"><li data-tab="users" class="active">Users</li></a>
           <a href="/pages/campaignsMange.html"><li data-tab="campaigns">Campaigns</li></a>
-          <li data-tab="pledges">Pledges</li>
+          <a href="/pages/pledgesManage.html"><li data-tab="pledges">Pledges</li></a>
         </ul>
       </div>
 

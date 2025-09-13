@@ -1,67 +1,78 @@
 @use "../abstracts/variables" as *;
 @use "../components/btns" as *;
 
-#admin {
-  display: flex;
-}
-.containers {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
+
+
+// Sidebar
 .sidebar {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 20%;
+  left: 0px;;
+  width: 240px; 
   height: 100vh;
   background-color: $dark-color;
   color: $light-color;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 15px;
+  padding: 20px 15px;
   z-index: 100;
+  transition: width 0.3s ease;
 
+ 
   .logo {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
     color: $primary-color;
     text-align: center;
+    letter-spacing: 1px;
   }
 
+  // القايمة
   .menu {
     list-style: none;
     padding: 0;
     margin: 0;
+    flex: 1;
 
-    li ,a{
-      color:white;
-      padding: 10px;
-      margin-bottom: 8px;
-      cursor: pointer;
-      border-radius: 6px;
-      transition: background 0.3s;
+    li {
+      margin-bottom: 10px;
 
-      &:hover {
-        background-color: $gr-color;
-      }
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $light-color;
+        padding: 10px 14px;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        transition: background 0.3s, transform 0.2s;
 
-      &.active {
-        background-color: $primary-color;
-        color: $dark-color;
-        font-weight: bold;
+        &:hover {
+          background-color: $gr-color;
+          transform: translateX(4px);
+        }
+
+        &.active {
+          background-color: $primary-color;
+          color: $dark-color;
+          font-weight: 600;
+        }
       }
     }
   }
 
+  // محتوى الـ tab لو عاوز تعرضه تحت
   .tab-content {
-    margin-top: 15px;
+    margin-top: auto; // يروح تحت
     background: $light-color;
     color: $text-color;
-    padding: 10px;
-    border-radius: 6px;
+    padding: 12px;
+    border-radius: 8px;
     font-size: 14px;
     display: none;
 
@@ -70,7 +81,7 @@
     }
 
     h2 {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       font-size: 16px;
       color: $primary-color;
     }
@@ -80,5 +91,46 @@
       color: $text-color;
     }
   }
+}
 
+// Responsive
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+    padding: 15px;
+
+    .logo {
+      font-size: 18px;
+    }
+
+    .menu li a {
+      font-size: 13px;
+      padding: 8px 12px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 15px;
+
+    .menu {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+
+      li {
+        margin: 0;
+      }
+    }
+
+    .tab-content {
+      display: none !important;
+    }
+  }
 }

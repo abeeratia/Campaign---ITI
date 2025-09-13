@@ -6,15 +6,15 @@ AdminSidebar();
 const usersTableBody = document.querySelector("#usersTable tbody");
 
 async function renderUsers() {
-  // جلب بيانات المستخدمين من السيرفر
+
   const response = await fetch("http://localhost:3001/users");
   const users = await response.json();
   console.log(users);
 
-  // مسح أي بيانات قديمة في الجدول
+
   usersTableBody.innerHTML = "";
 
-  // عرض كل مستخدم
+ 
   users.map((user) => {
     const tr = document.createElement("tr");
 
@@ -41,7 +41,7 @@ async function renderUsers() {
 
     usersTableBody.appendChild(tr);
 
-    // تغيير الدور
+ 
     document
       .getElementById(`roleBtn${user.id}`)
       .addEventListener("click", async function () {
@@ -58,7 +58,7 @@ async function renderUsers() {
         tr.children[3].textContent = updatedUser.role;
       });
 
-    // تغيير حالة المستخدم
+   
     document
       .getElementById(`activeBtn${user.id}`)
       .addEventListener("click", async function () {
@@ -77,7 +77,7 @@ async function renderUsers() {
         this.textContent = updatedUser.isActive ? "Pending" : "Active";
       });
 
-    // تغيير حالة البلوك
+   
     document
       .getElementById(`blockBtn${user.id}`)
       .addEventListener("click", async function () {
@@ -98,5 +98,5 @@ async function renderUsers() {
   });
 }
 
-// تفعيل العرض عند تحميل الصفحة
+
 document.addEventListener("DOMContentLoaded", renderUsers);
